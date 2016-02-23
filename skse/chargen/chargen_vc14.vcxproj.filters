@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="skse">
+      <UniqueIdentifier>{e1b7a812-fdd3-4346-891e-3a09455171c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\api">
+      <UniqueIdentifier>{a0e4f48e-007e-4a2f-81b8-834b55b76e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\netimmerse">
+      <UniqueIdentifier>{fd078d26-3061-4a16-8a64-a6458aec7902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\scaleform">
+      <UniqueIdentifier>{178e6ab9-5817-4b67-92a9-ec6bef25fe4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\papyrus">
+      <UniqueIdentifier>{55a5e7f3-f107-4448-91a8-5068d052f4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\papyrus\functions">
+      <UniqueIdentifier>{83d165ad-14f2-4f95-a77d-ef7938cd3908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skse\papyrus\vm">
+      <UniqueIdentifier>{454d5603-ace3-4983-be97-1e470c1ad8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CompactDX">
+      <UniqueIdentifier>{c500a798-5f05-469d-a92d-8c529d6f7285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interfaces">
+      <UniqueIdentifier>{0fd5f489-e09a-404a-9bb6-b740317ef994}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\skse\GameAPI.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameData.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameExtraData.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameFormComponents.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameForms.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameMenus.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameObjects.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameReferences.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameResources.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameRTTI.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameSettings.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameStreams.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\GameTypes.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiGeometry.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiMaterial.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiNodes.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiObjects.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiProperties.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiRenderer.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiRTTI.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiSerialization.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiTextures.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiTypes.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\ScaleformAPI.cpp">
+      <Filter>skse\scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\ScaleformCallbacks.cpp">
+      <Filter>skse\scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleformLoader.cpp">
+      <Filter>skse\scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="PapyrusCharGen.cpp">
+      <Filter>skse\papyrus\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\PapyrusArgs.cpp">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\PapyrusNativeFunctions.cpp">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\PapyrusVM.cpp">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXBrush.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXCamera.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXMaterial.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXMesh.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXNifMesh.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXNifScene.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXPicker.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXScene.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXShader.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXUndo.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\HashUtil.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MorphHandler.cpp" />
+    <ClCompile Include="NifUtils.cpp" />
+    <ClCompile Include="PartHandler.cpp" />
+    <ClCompile Include="..\skse\SafeWrite.cpp" />
+    <ClCompile Include="ScaleformFunctions.cpp" />
+    <ClCompile Include="CDXEditableMesh.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiExtraData.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtils.cpp" />
+    <ClCompile Include="..\skse\GameBSExtraData.cpp">
+      <Filter>skse\api</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXStroke.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXEditableScene.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXNifBrush.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXNifCommands.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXResetMask.cpp">
+      <Filter>CompactDX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\skse\NiAllocator.cpp">
+      <Filter>skse\netimmerse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\skse\GameAPI.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameData.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameExtraData.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameFormComponents.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameForms.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameMenus.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameObjects.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameReferences.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameResources.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameRTTI.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameSettings.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameStreams.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\GameTypes.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiGeometry.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiMaterial.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiNodes.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiObjects.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiProperties.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiRenderer.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiRTTI.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiSerialization.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiTextures.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiTypes.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\ScaleformAPI.h">
+      <Filter>skse\scaleform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\ScaleformCallbacks.h">
+      <Filter>skse\scaleform</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleformLoader.h">
+      <Filter>skse\scaleform</Filter>
+    </ClInclude>
+    <ClInclude Include="PapyrusCharGen.h">
+      <Filter>skse\papyrus\functions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\PapyrusArgs.h">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\PapyrusNativeFunctions.h">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\PapyrusVM.h">
+      <Filter>skse\papyrus\vm</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXBrush.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXCamera.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXMaterial.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXMesh.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXNifMesh.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXNifScene.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXPicker.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXScene.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXShader.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXUndo.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\HashUtil.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="MorphHandler.h" />
+    <ClInclude Include="NifUtils.h" />
+    <ClInclude Include="PartHandler.h" />
+    <ClInclude Include="ScaleformFunctions.h" />
+    <ClInclude Include="CDXEditableMesh.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\skse\NiExtraData.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtils.h" />
+    <ClInclude Include="..\skse\GameBSExtraData.h">
+      <Filter>skse\api</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXStroke.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXEditableScene.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXNifBrush.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXNifCommands.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXResetMask.h">
+      <Filter>CompactDX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\IHashType.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\IPluginInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\ItemDataInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\NiTransformInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\OverlayInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\OverrideInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\OverrideVariant.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\TintMaskInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\interfaces\BodyMorphInterface.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\skse\NiAllocator.h">
+      <Filter>skse\netimmerse</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\skse\PapyrusNativeFunctionDef.inl">
+      <Filter>skse\papyrus\vm</Filter>
+    </None>
+    <None Include="..\skse\PapyrusNativeFunctionDef_Base.inl">
+      <Filter>skse\papyrus\vm</Filter>
+    </None>
+    <None Include="exports.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+</Project>

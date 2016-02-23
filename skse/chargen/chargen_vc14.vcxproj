@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_VC14|Win32">
+      <Configuration>Debug_VC14</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_VC14|Win32">
+      <Configuration>Release_VC14</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>chargen</ProjectName>
+    <ProjectGuid>{FC9A1EE6-D9DB-47F6-B0ED-8867439C43CE}</ProjectGuid>
+    <RootNamespace>chargen</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_VC14|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_VC14|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_VC14|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_VC14|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_VC14|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(DXSDK_DIR)\Lib\x86;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_VC14|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(DXSDK_DIR)\Lib\x86;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_VC14|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;$(SolutionDir)\..\..;$(SolutionDir)\..\jsoncpp;$(SolutionDir)\..\..\interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PLUGIN_EXAMPLE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>common/IPrefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_VC14|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;$(SolutionDir)\..\..;$(SolutionDir)\..\jsoncpp\;$(SolutionDir)\..\..\interfaces;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PLUGIN_EXAMPLE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>common/IPrefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\skse\GameAPI.cpp" />
+    <ClCompile Include="..\skse\GameBSExtraData.cpp" />
+    <ClCompile Include="..\skse\GameData.cpp" />
+    <ClCompile Include="..\skse\GameExtraData.cpp" />
+    <ClCompile Include="..\skse\GameFormComponents.cpp" />
+    <ClCompile Include="..\skse\GameForms.cpp" />
+    <ClCompile Include="..\skse\GameMenus.cpp" />
+    <ClCompile Include="..\skse\GameObjects.cpp" />
+    <ClCompile Include="..\skse\GameReferences.cpp" />
+    <ClCompile Include="..\skse\GameResources.cpp" />
+    <ClCompile Include="..\skse\GameRTTI.cpp" />
+    <ClCompile Include="..\skse\GameSettings.cpp" />
+    <ClCompile Include="..\skse\GameStreams.cpp" />
+    <ClCompile Include="..\skse\GameTypes.cpp" />
+    <ClCompile Include="..\skse\NiAllocator.cpp" />
+    <ClCompile Include="..\skse\NiExtraData.cpp" />
+    <ClCompile Include="..\skse\NiGeometry.cpp" />
+    <ClCompile Include="..\skse\NiMaterial.cpp" />
+    <ClCompile Include="..\skse\NiNodes.cpp" />
+    <ClCompile Include="..\skse\NiObjects.cpp" />
+    <ClCompile Include="..\skse\NiProperties.cpp" />
+    <ClCompile Include="..\skse\NiRenderer.cpp" />
+    <ClCompile Include="..\skse\NiRTTI.cpp" />
+    <ClCompile Include="..\skse\NiSerialization.cpp" />
+    <ClCompile Include="..\skse\NiTextures.cpp" />
+    <ClCompile Include="..\skse\NiTypes.cpp" />
+    <ClCompile Include="..\skse\ScaleformAPI.cpp" />
+    <ClCompile Include="..\skse\ScaleformCallbacks.cpp" />
+    <ClCompile Include="CDXResetMask.cpp" />
+    <ClCompile Include="CDXEditableMesh.cpp" />
+    <ClCompile Include="CDXEditableScene.cpp" />
+    <ClCompile Include="CDXNifBrush.cpp" />
+    <ClCompile Include="CDXNifCommands.cpp" />
+    <ClCompile Include="CDXStroke.cpp" />
+    <ClCompile Include="FileUtils.cpp" />
+    <ClCompile Include="ScaleformLoader.cpp" />
+    <ClCompile Include="PapyrusCharGen.cpp" />
+    <ClCompile Include="..\skse\PapyrusArgs.cpp" />
+    <ClCompile Include="..\skse\PapyrusNativeFunctions.cpp" />
+    <ClCompile Include="..\skse\PapyrusVM.cpp" />
+    <ClCompile Include="CDXBrush.cpp" />
+    <ClCompile Include="CDXCamera.cpp" />
+    <ClCompile Include="CDXMaterial.cpp" />
+    <ClCompile Include="CDXMesh.cpp" />
+    <ClCompile Include="CDXNifMesh.cpp" />
+    <ClCompile Include="CDXNifScene.cpp" />
+    <ClCompile Include="CDXPicker.cpp" />
+    <ClCompile Include="CDXScene.cpp" />
+    <ClCompile Include="CDXShader.cpp" />
+    <ClCompile Include="CDXUndo.cpp" />
+    <ClCompile Include="..\skse\HashUtil.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MorphHandler.cpp" />
+    <ClCompile Include="NifUtils.cpp" />
+    <ClCompile Include="PartHandler.cpp" />
+    <ClCompile Include="..\skse\SafeWrite.cpp" />
+    <ClCompile Include="ScaleformFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\interfaces\BodyMorphInterface.h" />
+    <ClInclude Include="..\interfaces\IHashType.h" />
+    <ClInclude Include="..\interfaces\IPluginInterface.h" />
+    <ClInclude Include="..\interfaces\ItemDataInterface.h" />
+    <ClInclude Include="..\interfaces\NiTransformInterface.h" />
+    <ClInclude Include="..\interfaces\OverlayInterface.h" />
+    <ClInclude Include="..\interfaces\OverrideInterface.h" />
+    <ClInclude Include="..\interfaces\OverrideVariant.h" />
+    <ClInclude Include="..\interfaces\TintMaskInterface.h" />
+    <ClInclude Include="..\skse\GameAPI.h" />
+    <ClInclude Include="..\skse\GameBSExtraData.h" />
+    <ClInclude Include="..\skse\GameData.h" />
+    <ClInclude Include="..\skse\GameExtraData.h" />
+    <ClInclude Include="..\skse\GameFormComponents.h" />
+    <ClInclude Include="..\skse\GameForms.h" />
+    <ClInclude Include="..\skse\GameMenus.h" />
+    <ClInclude Include="..\skse\GameObjects.h" />
+    <ClInclude Include="..\skse\GameReferences.h" />
+    <ClInclude Include="..\skse\GameResources.h" />
+    <ClInclude Include="..\skse\GameRTTI.h" />
+    <ClInclude Include="..\skse\GameSettings.h" />
+    <ClInclude Include="..\skse\GameStreams.h" />
+    <ClInclude Include="..\skse\GameTypes.h" />
+    <ClInclude Include="..\skse\NiAllocator.h" />
+    <ClInclude Include="..\skse\NiExtraData.h" />
+    <ClInclude Include="..\skse\NiGeometry.h" />
+    <ClInclude Include="..\skse\NiMaterial.h" />
+    <ClInclude Include="..\skse\NiNodes.h" />
+    <ClInclude Include="..\skse\NiObjects.h" />
+    <ClInclude Include="..\skse\NiProperties.h" />
+    <ClInclude Include="..\skse\NiRenderer.h" />
+    <ClInclude Include="..\skse\NiRTTI.h" />
+    <ClInclude Include="..\skse\NiSerialization.h" />
+    <ClInclude Include="..\skse\NiTextures.h" />
+    <ClInclude Include="..\skse\NiTypes.h" />
+    <ClInclude Include="..\skse\ScaleformAPI.h" />
+    <ClInclude Include="..\skse\ScaleformCallbacks.h" />
+    <ClInclude Include="CDXResetMask.h" />
+    <ClInclude Include="CDXEditableMesh.h" />
+    <ClInclude Include="CDXEditableScene.h" />
+    <ClInclude Include="CDXNifBrush.h" />
+    <ClInclude Include="CDXNifCommands.h" />
+    <ClInclude Include="CDXStroke.h" />
+    <ClInclude Include="FileUtils.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScaleformLoader.h" />
+    <ClInclude Include="PapyrusCharGen.h" />
+    <ClInclude Include="..\skse\PapyrusArgs.h" />
+    <ClInclude Include="..\skse\PapyrusNativeFunctions.h" />
+    <ClInclude Include="..\skse\PapyrusVM.h" />
+    <ClInclude Include="CDXBrush.h" />
+    <ClInclude Include="CDXCamera.h" />
+    <ClInclude Include="CDXMaterial.h" />
+    <ClInclude Include="CDXMesh.h" />
+    <ClInclude Include="CDXNifMesh.h" />
+    <ClInclude Include="CDXNifScene.h" />
+    <ClInclude Include="CDXPicker.h" />
+    <ClInclude Include="CDXScene.h" />
+    <ClInclude Include="CDXShader.h" />
+    <ClInclude Include="CDXUndo.h" />
+    <ClInclude Include="..\skse\HashUtil.h" />
+    <ClInclude Include="Hooks.h" />
+    <ClInclude Include="MorphHandler.h" />
+    <ClInclude Include="NifUtils.h" />
+    <ClInclude Include="PartHandler.h" />
+    <ClInclude Include="ScaleformFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\skse\PapyrusNativeFunctionDef.inl" />
+    <None Include="..\skse\PapyrusNativeFunctionDef_Base.inl" />
+    <None Include="exports.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\common_vc14.vcxproj">
+      <Project>{20c6411c-596f-4b85-be4e-8bc91f59d8a6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jsoncpp\jsoncpp.vcxproj">
+      <Project>{522ec01c-c40f-4de4-a83e-06c5b56620e6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
